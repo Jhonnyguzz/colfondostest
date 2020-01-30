@@ -1,0 +1,27 @@
+<div class="main-content">
+    <header>
+        <h1>Colfondos</h1>
+    </header>
+    <form (ngSubmit)="sendData()">
+        <label for="fname">Documento</label>
+        <input [(ngModel)]="user.document" type="number" id="document" name="document" placeholder="Documento">
+
+        <label for="fname">Tipo de documento</label>
+        <select [(ngModel)]="user.typeDocument" id="country" name="country">
+            <option value="CC">C&eacute;dula de ciudadan&iacute;a</option>
+            <option value="TI">Tarjeta de identidad</option>
+            <option value="EX">C&eacute;dula de extranjer&iacute;a</option>
+        </select>
+    
+        <label for="lname">Email</label>
+        <input [(ngModel)]="user.email" type="text" id="email" name="email" placeholder="Email">
+    
+        <label for="lname">Celular</label>
+        <input [(ngModel)]="user.cellphone" type="number" id="email" name="cellphone" placeholder="Celular">
+
+        <input type="submit" value="Submit">
+    </form>
+    <footer>
+        <p>Created by Jhonatan Guzm&aacute;n</p>
+    </footer>
+</div>
